@@ -10,6 +10,8 @@
       href="../images/scrappy-doo.png"
       type="image/x-icon"
     />
+    <!-- External css linking -->
+    <link rel="stylesheet" href="/CSI-3150-CLASS/css/style.css" />
   </head>
   <body>
     <!--header of the page contains nav bar as html list-->
@@ -26,14 +28,24 @@
       <hr />
     </header>
     <main>
+      <h2>Please fill out the form below with the required information and I will get back to you.</h2>
+      <p>Alternatively, you can <a href="mailto:mickmouse@ou.edu">email me</a> directly</p>
       <form action="url/server/endpoint" method="post">
         <label for="fName">Enter First Name: </label>
         <input type="text" id="fName" name="fName" />
+        <br />
         <br />
         <label for="lName">Enter Last Name: </label>
         <input type="text" id="lName" name="lName" />
         <br />
         <br />
+        <label for="emailID">Enter your email id:</label>
+        <input type="email" id="emailID" name="emailID" />
+        <br />
+        <br />
+        <label for="user-feedback">Please provide your feedback and I will get back to you:</label>
+        <textarea name="user-feedback" id="user-feedback" cols="50" rows="10">
+Please delete this text and provide your feedback</textarea>
         <!--Radio buttons-->
         <p>What is your favorite programming language?</p>
 
@@ -55,27 +67,23 @@
         <br />
 
         <!--Checkbox tutorial-->
+        <p>What is your preferred language for web development.</p>
         <input
           type="checkbox"
           name="prog-lang1"
           id="python-checkbox"
           value="python"
         />
-        <label for="python-checkbox">Python</label>
+        <label for="python-checkbox">Python - Django</label>
+        <br />
         <input
           type="checkbox"
           name="prog-lang2"
           id="java-checkbox"
           value="java"
         />
-        <label for="java-checkbox">Java</label>
-        <input
-          type="checkbox"
-          name="prog-lang3"
-          id="javascript-checkbox"
-          value="javascript"
-        />
-        <label for="javascript-checkbox">JavaScript</label>
+        <label for="java-checkbox">JavaScript - Express JS</label>
+        <br />
         <!--Submit button to end the form-->
         <input type="submit" value="Submit" />
       </form>
@@ -86,3 +94,8 @@
     </footer>
   </body>
 </html>
+
+
+<!--Creating a login/signup page using the knowledge of html forms and its elements:
+  index page -> html button / text : wrap that in an anchor tag and give href to the sign up page -> login.html : username, pwd, birthday, other user info...
+-->

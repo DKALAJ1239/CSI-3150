@@ -1,0 +1,25 @@
+header, 
+footer {
+    background-color: cadetblue;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+    font-weight: 800;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    background-color: aquamarine;
+}
+
+#app-container {
+    background-color: blanchedalmond !important;
+}
+
+/* div {
+    background-color: aquamarine;
+} */
+
