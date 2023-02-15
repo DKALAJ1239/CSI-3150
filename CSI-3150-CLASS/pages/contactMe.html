@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me Page</title>
+    <link
+      rel="shortcut icon"
+      href="../images/scrappy-doo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!--header of the page contains nav bar as html list-->
+    <header id="website-header">
+      <nav id="navigation-menu">
+        <ul>
+          <a href="../index.html"><li>Home</li></a>
+          <a href="./resume.html"><li>Resume</li></a>
+          <a href="./projects.html"><li>Projects</li></a>
+          <a href="./hobbies.html"><li>Hobbies</li></a>
+          <a href="./contactMe.html"><li>Contact Me</li></a>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <form action="url/server/endpoint" method="post">
+        <label for="fName">Enter First Name: </label>
+        <input type="text" id="fName" name="fName" />
+        <br />
+        <label for="lName">Enter Last Name: </label>
+        <input type="text" id="lName" name="lName" />
+        <br />
+        <br />
+        <!--Radio buttons-->
+        <p>What is your favorite programming language?</p>
+
+        <input type="radio" name="prog-lang" id="python" value="python" />
+        <label for="python">Python</label>
+
+        <input
+          type="radio"
+          name="prog-lang"
+          id="javascript"
+          value="javascript"
+        />
+        <label for="javascript">JavaScript</label>
+
+        <input type="radio" name="prog-lang" id="java" value="java" />
+        <label for="java">Java</label>
+
+        <br />
+        <br />
+
+        <!--Checkbox tutorial-->
+        <input
+          type="checkbox"
+          name="prog-lang1"
+          id="python-checkbox"
+          value="python"
+        />
+        <label for="python-checkbox">Python</label>
+        <input
+          type="checkbox"
+          name="prog-lang2"
+          id="java-checkbox"
+          value="java"
+        />
+        <label for="java-checkbox">Java</label>
+        <input
+          type="checkbox"
+          name="prog-lang3"
+          id="javascript-checkbox"
+          value="javascript"
+        />
+        <label for="javascript-checkbox">JavaScript</label>
+        <!--Submit button to end the form-->
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <hr />
+    <footer id="website-footer">
+      <span id="footer-text">copyright of mickey mouse &copy; 2023.</span>
+    </footer>
+  </body>
+</html>
