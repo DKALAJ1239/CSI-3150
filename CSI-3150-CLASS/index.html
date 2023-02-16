@@ -11,7 +11,8 @@
       type="image/x-icon"
     />
     <!-- External css linking -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/navbar.css" />
     <!-- internal style of CSS embedding -->
     <!-- <style>
       div {
@@ -23,13 +24,32 @@
     <div id="app-container" class="container-class">
         <!--header of the page contains nav bar as html list-->
         <header id="website-header">
-            <nav id="navigation-menu">
-                <ul>
-                    <a href="./index.html"><li>Home</li></a>
-                    <a href="./pages/resume.html"><li>Resume</li></a>
-                    <a href="./pages/projects.html"><li>Projects</li></a>
-                    <a href="./pages/hobbies.html"><li>Hobbies</li></a>
-                    <a href="./pages/contactMe.html"><li>Contact Me</li></a>
+            <nav id="navigation-menu" class="navbar">
+              <!-- Nav bar logo -->
+              <div class="logo">
+                <img src="./images/scrappy-doo.png" alt="website logo" width="120px" height="120px">
+              </div>
+                <!-- Navbar meny options -->
+                <ul class="nav-links">
+                  <!-- Place holder area for responsive navbar/Hamburger menu icon -->
+                    <!-- <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+
+                    <!-- Navbar menu options -->
+                    <div class="menu">
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./pages/resume.html">Resume</a></li>
+                      <li class="projects"><a href="./pages/projects.html">Projects</a></li>
+                      <!-- Drop down page to list the different projects -->
+                        <ul class="dropdown">
+                          <li><a href="./pages/projects.html#project1">Project 1</a></li>
+                          <li><a href="./pages/projects.html#project1">Project 2</a></li>
+                          <li><a href="./pages/projects.html#project1">Project 3</a></li>
+                          <li><a href="./pages/projects.html#project1">Project 4</a></li>
+                        </ul>
+                      <li><a href="./pages/hobbies.html">Hobbies</a></li>
+                      <li><a href="./pages/contactMe.html">Contact Me</a></li>
+                    </div>
                 </ul>
             </nav>
             <hr />

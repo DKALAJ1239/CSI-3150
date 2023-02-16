@@ -1,88 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-    <link 
-      rel="shortcut icon" 
-      href="../images/scrappy-doo.png" 
+    <link
+      rel="shortcut icon"
+      href="../images/scrappy-doo.png"
       type="image/x-icon"
     />
     <!-- External css linking -->
     <link rel="stylesheet" href="/CSI-3150-CLASS/css/style.css"" />
-</head>
-<body>
-        <!--header of the page contains nav bar as html list-->
-        <header id="website-header">
-            <nav id="navigation-menu">
-                <ul>
-                    <a href="../index.html"><li>Home</li></a>
-                    <a href="./resume.html"><li>Resume</li></a>
-                    <a href="./projects.html"><li>Projects</li></a>
-                    <a href="./hobbies.html"><li>Hobbies</li></a>
-                    <a href="./contactMe.html"><li>Contact Me</li></a>
-                </ul>
-            </nav>
-            <hr />
-        </header>
-        <!--main content - html table: projects table-->
-        <table id="projects-table" border="2">
-            <caption>
-                Table: Projects Table
-            </caption>
-            <thead>
-            <!--Table header-->
-            <tr>
-                <th>S.No</th>
-                <th>Title</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!--First row of data-->
-            <tr>
-                <td>1</td>
-                <td>abc research</td>
-                <td>01 Jan 2023</td>
-                <td>30 May 2023</td>
-                <td>Lorem ipsum...</td>
-            </tr>
-            <!--Second row of data-->
-            <tr>
-                <td>2</td>
-                <td>efg research</td>
-                <td>05 Jan 2023</td>
-                <td>3 May 2023</td>
-                <td>Lorem ipsum...</td>
-            </tr>
-            </tbody>
-            <tfoot></tfoot>
-        </table>
-        <hr />
-        <!--demo for using rowspan attribute with html tables-->
-        <table border="6">
-            <caption>
-                Table: Projects Table using rowspan
-            </caption>
-            <tr>
-                <th>Child Name</th>
-                <th>Parent's Name</th>
-            </tr>
-            <tr>
-                <td rowspan="2">Child One</td>
-                <td>Parent 1</td>
-            </tr>
-            <tr>
-                <td>Parent 2</td>
-            </tr>
-        </table>
-    <hr/>
-        <footer id="website-footer">
-        <span id="footer-text">copyright of mickey mouse &copy; 2023.</span>
-      </footer>
-</body>
+  </head>
+  <body>
+    <!--header of the page contains nav bar as html list-->
+    <header id="website-header">
+      <nav id="navigation-menu">
+        <ul>
+          <a href="../index.html"><li>Home</li></a>
+          <a href="./resume.html"><li>Resume</li></a>
+          <a href="./projects.html"><li>Projects</li></a>
+          <a href="./hobbies.html"><li>Hobbies</li></a>
+          <a href="./contactMe.html"><li>Contact Me</li></a>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <!--main content - html table: projects table-->
+    <table id="projects-table" border="2">
+      <caption>
+        Table: Projects Table
+      </caption>
+      <thead>
+        <!--Table header-->
+        <tr>
+          <th>S.No</th>
+          <th>Title</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--First row of data-->
+        <tr>
+          <td>1</td>
+          <td>abc research</td>
+          <td>01 Jan 2023</td>
+          <td>30 May 2023</td>
+          <td>Lorem ipsum...</td>
+        </tr>
+        <!--Second row of data-->
+        <tr>
+          <td>2</td>
+          <td>efg research</td>
+          <td>05 Jan 2023</td>
+          <td>3 May 2023</td>
+          <td>Lorem ipsum...</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+    <hr />
+    <!--demo for using rowspan attribute with html tables-->
+    <table border="6">
+      <caption>
+        Table: Projects Table using rowspan
+      </caption>
+      <tr>
+        <th>Child Name</th>
+        <th>Parent's Name</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Child One</td>
+        <td>Parent 1</td>
+      </tr>
+      <tr>
+        <td>Parent 2</td>
+      </tr>
+    </table>
+
+    <article id="project1">
+      <h2>Artifical Intelligence</h2>
+      <p>some text here...</p>
+    </article>
+    <article id="project2">
+      <h2>Cybersecurity</h2>
+      <p>some text here...</p>
+    </article>
+    
+    <hr />
+    <!-- footer of page, contains copyright info -->
+    <footer id="website-footer">
+      <span id="footer-text">copyright of mickey mouse &copy; 2023.</span>
+    </footer>
+  </body>
 </html>

@@ -15,6 +15,10 @@ p {
     background-color: aquamarine;
 }
 
+p {
+    background-color: azure
+}
+
 #app-container {
     background-color: blanchedalmond !important;
 }
@@ -23,3 +27,20 @@ p {
     background-color: aquamarine;
 } */
 
+/* 
+talked about in 1/26 lecture: 
+
+selector {
+    property: value;
+}
+
+cascading 
+
+margin(border(padding(content)))
+
+Lexture 1/31:
+nav bar menu/styling
+basic navbar + dropdown menu
+responsive navbar (when navbar shows responsive behavior depending on screensize of device)
+--> display: block, inline, inline-block
+*/
