@@ -1,0 +1,15 @@
+p {
+    color: gray;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace
+}
+
+p:hover {
+    background-color: blue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+p::selection {
+    color: red;
+    background-color: green;
+}

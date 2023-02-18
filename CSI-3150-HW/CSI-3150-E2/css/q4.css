@@ -1,0 +1,17 @@
+
+/* Code Snippet for Question 4: */
+
+/* Using CSS media queries for responsive behavior */
+
+ @media (min-width 768px) {
+  /*max gives these stylings to desktop*/
+  .classname {
+    font-size: 20px;
+  }
+}
+@media (max-width 700px) {
+  /*min gives these stylings to mobile*/
+  .classname {
+    font-size: 15px;
+  }
+}
