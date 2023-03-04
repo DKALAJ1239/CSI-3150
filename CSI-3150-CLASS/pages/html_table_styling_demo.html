@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table Styling Demo</title>
+
+    <!-- CSS External Link -->
+    <link rel="stylesheet" href="/CSI-3150-CLASS/css/html_table_css_page.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Test Demo Page</h1>
+    </header>
+
+    <!-- container for our table -->
+    <div class="calender_container">
+      <!-- code the html table environment -->
+      <table id="calendar_table">
+        <caption>
+          Month: October, 2021
+        </caption>
+        <!-- Heading row of the calendar table -->
+        <thead>
+          <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 1st Week of Calendar -->
+          <tr>
+            <td>26</td>
+            <td>27</td>
+            <td>
+              28* <br />
+              <span>
+                <ul>
+                  <li>CSI 3450</li>
+                  <li>CSI 2520</li>
+                </ul>
+              </span>
+            </td>
+            <td>29</td>
+            <td>
+              30* <br />
+              <span>
+                <ul>
+                  <li>CSI 3450</li>
+                  <li>CSI 2520</li>
+                </ul>
+              </span>
+            </td>
+            <td>01</td>
+            <td>02</td>
+          </tr>
+
+          <!-- 2nd week -->
+          <tr>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+            <td>07</td>
+            <td>08</td>
+            <td>09</td>
+          </tr>
+          <!-- 3rd week -->
+          <tr>
+            <td>10</td>
+            <td class="holiday">
+              11* <br />
+              <span>Indeginous People's Day</span>
+            </td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+          </tr>
+          <!-- 4th week -->
+          <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>
+              19* <br />
+              <span>
+                <ul>
+                  <li>CSI 3450</li>
+                  <li>CSI 2520</li>
+                </ul>
+              </span>
+            </td>
+            <td>20</td>
+            <td>21</td>
+            <td class="holiday">
+              22* <br />
+              <span>Fall Break</span>
+            </td>
+            <td>23</td>
+          </tr>
+          <!-- 5th week -->
+          <tr>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+          </tr>
+          <!-- 6th week going into Nov -->
+          <tr>
+            <td class="holiday">
+              31* <br />
+              <span>Halloween</span>
+            </td>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

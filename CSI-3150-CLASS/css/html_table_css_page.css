@@ -1,0 +1,103 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    background-color:beige;
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-style: oblique;
+  position: relative;
+  top: 25%;
+  left: 2%;
+}
+
+/* calnadr styling */
+.calendar_container {
+  position: relative;
+  top: 75%;
+  left: 25%;
+  /* box model: border, margin, padding */
+  border: 20px;
+  margin: auto;
+  padding: 5px;
+}
+/* Basic Styling for the table environment */
+#calendar_table {
+  color: black;
+  background-color: rgb(253, 247, 247);
+  border-spacing: 2px;
+  border: 2px solid black;
+  border-radius: 0 0 15px 15px;
+  width: 50%;
+}
+
+/* CSS psuedo elements tutorial */
+/* style: alt rows bg color differently */
+tbody tr:nth-child(odd) {
+  background-color: red;
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightcoral;
+}
+
+#calendar_table th,
+#calendar_table th {
+  margin: 2px;
+  padding-bottom: 2px;
+}
+
+tbody tr:last-child {
+  border-radius: 0px 0px 20px 20px;
+}
+
+tbody tr:last-child > td:first-child {
+  border-radius: 0 0 0 20px;
+}
+
+tbody tr:last-child > td:last-child {
+  border-radius: 0 0 20px 0;
+}
+
+#calendar_table caption {
+  background-color: blueviolet;
+  color: antiquewhite;
+  font-weight: bolder;
+  font-size: 125%;
+  border-radius: 15px 15px 0 0;
+  text-transform: uppercase;
+  border: 2px solid black;
+}
+
+#calendar_table td {
+  width: 100px;
+  height: 100px;
+  vertical-align: top;
+}
+
+.holiday {
+  background-color: aqua;
+}
+
+/* hide your events by default */
+#calendar_table span {
+  display: block;
+  text-align: left;
+  color: rgb(146, 66, 202);
+  visibility: hidden;
+}
+
+#calendar_table td:active > span {
+  visibility: visible;
+}
+
+#calendar_table td:hover > span {
+  visibility: visible;
+}
+
+/* remove the styling for the lists */
