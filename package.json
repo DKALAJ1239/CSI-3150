@@ -1,0 +1,19 @@
+{
+  "name": "csi-3150",
+  "version": "1.0.0",
+  "description": "demo for tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DKALAJ1239/CSI-3150.git"
+  },
+  "author": "dkalaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DKALAJ1239/CSI-3150/issues"
+  },
+  "homepage": "https://github.com/DKALAJ1239/CSI-3150#readme"
+}
