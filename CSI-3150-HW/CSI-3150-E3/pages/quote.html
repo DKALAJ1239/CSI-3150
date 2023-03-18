@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Random Quote Generator</p>
+    <button onclick="genRandomQuote(randomNum(0,10))">
+      This is a random quote generator. Click for one.
+    </button>
+    <script>
+      const quotes = [
+        "I don't want to be the next Michael Jordan, I only want to be Kobe Bryant. —Kobe Bryant",
+        "You're playing a game, whether it's Little League or Game 7 of the World Series. It's impossible to do well unless you're having a good time. People talk about pressure. Yeah, there's pressure. But I just look at it as fun. —Derek Jeter",
+        "Believe me, the reward is not so great without the struggle. —Wilma Rudolph",
+        "Sports serve society by providing vivid examples of excellence. —George F. Will",
+        "I hated every minute of training, but I said, don't quit, suffer now and live the rest of your life as a champion. —Muhammad Ali",
+        "Persistence can change failure into extraordinary achievement. —Marv Levy",
+        "Enthusiasm is everything. It must be taut and vibrating like a guitar string. - Pelé",
+        "The secret is to believe in your dreams; in your potential that you can be like your star, keep searching, keep believing and don't lose faith in yourself. - Neymar",
+        "I think sometimes the best training is to rest. - Cristiano Ronaldo",
+        "In football (soccer), the worst blindness is only seeing the ball. - Nelson Falcão",
+      ];
+      function genRandomQuote(index) {
+        alert(quotes[index]);
+      }
+      function randomNum(min, max) {
+        const range = max - min + 1;
+        const randNum = Math.floor(Math.random() * range) + min;
+        return randNum;
+      }
+    </script>
+  </body>
+</html>
