@@ -1,6 +1,5 @@
 #vinyl-slideshow{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-radius: 25px 25px 25px 25px;
     background-color: #717171;
 }
 

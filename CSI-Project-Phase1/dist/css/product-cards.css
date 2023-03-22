@@ -7,6 +7,7 @@
 
 .product-grid {
     background-color: #D6D3F0;
+    border-radius: 25px;
 }
 
 /* Product grid */
@@ -15,12 +16,13 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
     align-items: flex-start;
+    padding: 1rem;
 }
 
 /* Card */
 .card {
     --padding: 1rem;
-    background: #F97068;
+    background: #121212;
     border: 10px solid #777;
     border-radius: .25rem;
     overflow: hidden;
@@ -31,7 +33,7 @@
 
 .card.card-shadow {
     border: none;
-    box-shadow: 0 2px 5px 0 #D6D3F0;
+    box-shadow: 0 2px 5px 0 #F97068;
 }
 
 /* Card header */
@@ -60,7 +62,7 @@
 /* Card hover effects */
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px #D6D3F0;
+    box-shadow: 0 10px 20px #F97068;
 }
 
 .card:hover>.card-header.card-image>img {
@@ -79,14 +81,14 @@
     margin-top: 1rem;
     padding: var(--padding);
     padding-top: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #F97068;
 }
 
 /* Buttons */
 .btn {
-    --color: #9CB380;
+    --color: #F97068;
     background: var(--color);
-    color: white;
+    color: #121212;
     border: none;
     font-size: 1rem;
     padding: .5em .75em;
@@ -102,7 +104,7 @@
 }
 
 .btn.btn-outline {
-    border: 1px solid #777;
+    border: 1px solid #F97068;
     color: #777;
     background: transparent;
     transition: all 0.3s ease-in-out;
@@ -112,5 +114,12 @@
 .btn.btn-outline:focus {
     background: hsl(200, 50%, 90%);
     color: #333;
-    border
 }
+
+/*
+black --> 130601
+Light Red --> F97068
+Lavender (light purple-blue) --> D6D3F0
+Light Green --> #D4E09B
+Dark Green --> #9CB380
+*/

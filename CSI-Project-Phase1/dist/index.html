@@ -6,24 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vinyl Visions</title>
-  <link rel="shortcut icon" href="/CSI-Project-Phase1/dist/img/favicon-vinyl-store.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" href="/CSI-Project-Phase1/dist/img/favicon-logo-main.png" type="image/x-icon" />
   <link rel="stylesheet" href="/CSI-Project-Phase1/dist/css/index.css" />
   <script src="/CSI-Project-Phase1/dist/js/carouselSlideShow.js"></script>
   <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="/CSI-Project-Phase1/dist/output.css" />
 </head>
 
-<body>
+<body class="bg-neutral-800">
   <div id="app-container" class="container-class">
 
     <!--header of the page contains nav bar as html list-->
     <header id="website-header">
-      <nav id="navigation-menu" class="navbar">
+      <nav id="navigation-menu" class="navbar mx-5">
 
         <!-- Nav bar logo -->
-        <div class="logo">
-          <img src="/CSI-Project-Phase1/dist/img/favicon-vinyl-store.jpg" alt="website logo" width="60px"
-            height="60px">
-        </div>
+        <img src="/CSI-Project-Phase1/dist/img/brand.PNG" class="logo" alt="website logo" width="120px" height="60px">
 
         <!-- Navbar meny options -->
         <ul class="nav-links">
@@ -32,40 +30,46 @@
 
           <!-- Navbar menu options -->
           <div class="menu">
-            <li><a href="./index.html"></a>Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./pages/products.html">Products</a></li>
             <li class="projects_primary"><a href="./pages/aboutUs.html">About</a>
-              <ul class="dropdown">
+              <!-- <ul class="dropdown">
                 <li><a href="./pages/projects.html#project1">Project 1</a></li>
                 <li><a href="./pages/projects.html#project1">Project 2</a></li>
                 <li><a href="./pages/projects.html#project1">Project 3</a></li>
-              </ul>
+              </ul> -->
             </li>
           </div>
         </ul>
       </nav>
-      <hr />
     </header>
 
+
     <!--main body of the page-->
-    <main id="vinyl-slideshow">
+    <main id="vinyl-slideshow" class="mx-5 my-5 shadow-xl shadow-white">
       <!-- slider container -->
       <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <img src="/CSI-Project-Phase1/dist/img/vinyl-after-hours.png" style="width:100%" onload="showSlides(1)">
-          <div class="text">Caption Text</div>
+        <div class="mySlides fade aspect-video object-cover">
+          <img src="/CSI-Project-Phase1/dist/img/vinyl-after-hours.jpg" style="width:100%" onload="showSlides(1)">
+          <div
+            class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text">
+            Caption Two</div>
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides fade aspect-video object-cover">
           <img src="/CSI-Project-Phase1/dist/img/vinyl-heroes-and-villians.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
+          <div
+            class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text">
+            Caption Two</div>
         </div>
 
-        <div class="mySlides fade">
-          <img src="/CSI-Project-Phase1/dist/img/vinyl-hoodie-szn.webp" style="width:100%">
-          <div class="text">Caption Three</div>
+        <div class="mySlides fade aspect-video object-cover">
+          <img src="/CSI-Project-Phase1/dist/img/vinyl-hoodie-szn.jpg" style="width:100%">
+          <div
+            class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text">
+            Caption Two</div>
         </div>
 
         <!-- Next and previous buttons -->
@@ -76,9 +80,11 @@
 
       <!-- The dots/circles -->
       <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <div class="bg-gray-600 hover:bg-gray-800 transition-all duration-300 rounded-bl-lg rounded-br-lg">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
 
     </main>

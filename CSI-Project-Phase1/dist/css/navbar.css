@@ -24,7 +24,6 @@ Light Red --> F97068
 Lavender (light purple-blue) --> D6D3F0
 Light Green --> #D4E09B
 Dark Green --> #9CB380
-
 */
 
 /* start styling the navbar using flex property of css */
@@ -45,8 +44,8 @@ Dark Green --> #9CB380
 
 /* Logo */
 .logo {
-    width: 10px;
-    height: 10px;
+    width: 210px;
+    height: 75px;
     border-radius: 10px;
 }
 

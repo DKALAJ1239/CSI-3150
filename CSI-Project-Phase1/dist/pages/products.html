@@ -6,47 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/CSI-Project-Phase1/dist/css/navbar.css" />
+    <link rel="stylesheet" href="/CSI-Project-Phase1/dist/css/navbar.css"/>
     <link rel="stylesheet" href="/CSI-Project-Phase1/dist/css/product-cards.css" />
+    <link rel="stylesheet" href="/CSI-Project-Phase1/dist/output.css" />
 </head>
 
-<body>
+<body class="bg-neutral-800">
+    <div id="app-container" class="container-class">
+
     <!--header of the page contains nav bar as html list-->
     <header id="website-header">
-        <nav id="navigation-menu" class="navbar">
-
+        <nav id="navigation-menu" class="navbar mx-5">
+    
             <!-- Nav bar logo -->
-            <div class="logo">
-                <img src="/CSI-Project-Phase1/dist/img/favicon-vinyl-store.jpg" alt="website logo" width="60px"
-                    height="60px">
-            </div>
-
+            <img src="/CSI-Project-Phase1/dist/img/brand.PNG" class="logo" alt="website logo" width="120px" height="60px">
+    
             <!-- Navbar meny options -->
             <ul class="nav-links">
                 <input type="checkbox" id="checkbox_toggle" />
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
+    
                 <!-- Navbar menu options -->
                 <div class="menu">
-                    <li><a href="./index.html"></a>Home</a></li>
-                    <li><a href="./pages/products.html">Products</a></li>
-                    <li class="projects_primary"><a href="./pages/aboutUs.html">About</a>
-                        <ul class="dropdown">
-                            <li><a href="./pages/projects.html#project1">Project 1</a></li>
-                            <li><a href="./pages/projects.html#project1">Project 2</a></li>
-                            <li><a href="./pages/projects.html#project1">Project 3</a></li>
-                        </ul>
+                    <li><a href="/CSI-Project-Phase1/dist/index.html">Home</a></li>
+                    <li><a href="/CSI-Project-Phase1/dist/pages/products.html">Products</a></li>
+                    <li class="projects_primary"><a href="/CSI-Project-Phase1/dist/pages/aboutUs.html">About</a>
+                        <!-- <ul class="dropdown">
+                    <li><a href="./pages/projects.html#project1">Project 1</a></li>
+                    <li><a href="./pages/projects.html#project1">Project 2</a></li>
+                    <li><a href="./pages/projects.html#project1">Project 3</a></li>
+                  </ul> -->
                     </li>
                 </div>
             </ul>
         </nav>
-        <hr />
     </header>
-    <main id="product-cards">
+
+    <main id="product-cards" class="mx-5 my-5 ">
         <div class="product-grid">
             <div class="card card-shadow">
                 <div class="card-header card-image">
-                    <img src="https://source.unsplash.com/178j8tJrNlc" />
+                    <img src="/CSI-Project-Phase1/dist/img/vinyl-dont-forget-about-me-demos.jpg" />
                 </div>
                 <div class="card-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque
@@ -60,7 +60,7 @@
             </div>
             <div class="card card-shadow">
                 <div class="card-header card-image">
-                    <img src="https://source.unsplash.com/eWqOgJ-lfiI" />
+                    <img src="/CSI-Project-Phase1/dist/img/vinyl-big-steppers.jpg" />
                 </div>
                 <div class="card-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque
@@ -74,7 +74,7 @@
             </div>
             <div class="card card-shadow">
                 <div class="card-header card-image">
-                    <img src="https://source.unsplash.com/eWqOgJ-lfiI" />
+                    <img src="/CSI-Project-Phase1/dist/img/vinyl-baby-keem-melodic-blue.jpg" />
                 </div>
                 <div class="card-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque
@@ -88,7 +88,7 @@
             </div>
             <div class="card card-shadow">
                 <div class="card-header card-image">
-                    <img src="https://source.unsplash.com/eWqOgJ-lfiI" />
+                    <img src="/CSI-Project-Phase1/dist/img/vinyl-flower-boy.jpg" />
                 </div>
                 <div class="card-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque
@@ -102,7 +102,7 @@
             </div>
             <div class="card card-shadow">
                 <div class="card-header card-image">
-                    <img src="https://source.unsplash.com/eWqOgJ-lfiI" />
+                    <img src="/CSI-Project-Phase1/dist/img/vinyl-ready-to-die.png" />
                 </div>
                 <div class="card-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque
@@ -116,7 +116,7 @@
             </div>
             <div class="card card-shadow">
                 <div class="card-header card-image">
-                    <img src="https://source.unsplash.com/eWqOgJ-lfiI" />
+                    <img src="/CSI-Project-Phase1/dist/img/vinyl-stories.jpg" />
                 </div>
                 <div class="card-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque
@@ -130,6 +130,12 @@
             </div>
         </div>
     </main>
+    <hr />
+    <!--footer of the page contains copyright information-->
+    <footer id="website-footer">
+        <span id="footer-text">copyright of mickey mouse &copy; 2023.</span>
+    </footer>
+</div>
 </body>
 
 </html>
