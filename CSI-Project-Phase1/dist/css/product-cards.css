@@ -123,3 +123,22 @@ Lavender (light purple-blue) --> D6D3F0
 Light Green --> #D4E09B
 Dark Green --> #9CB380
 */
+
+
+/* START OF STYLING GENRE DROP DOWN MENU */
+
+/* .dropdown {
+    display
+} */
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* ul {
+    display: none;
+} */
+
+input[type=checkbox]:checked~ul {
+    display: block
+}
