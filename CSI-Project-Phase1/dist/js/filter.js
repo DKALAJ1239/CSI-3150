@@ -58,36 +58,41 @@
 // if (!cardInfo.card1.genre.includes("Indie")) {
 //     card1.classList += "hidden"
 
-// const genreFilter = document.getElementById("genre-filter");
-// const productCards = document.querySelectorAll(".card");
+const genreFilter = document.getElementById("genre-filter");
+const productCards = document.querySelectorAll(".card");
 
-// genreFilter.addEventListener("change", () => {
-//   productCards.forEach((card) => {
-//     const genre = card.querySelector(".genre").textContent.toLowerCase();
-//     const selectedGenre = genreFilter.value.toLowerCase();
-//     if (genre === selectedGenre) {
-//       card.style.display = "block";
-//     } else {
-//       card.style.display = "none";
-//     }
-//   });
-// });
-
-function searchProduct() {
-  const input = document.getElementById("filter").value.toUpperCase();
-  const cardContainer = document.getElementById("card-lists");
-  console.log(cardContainer);
-  const cards = cardContainer.querySelectorAll(".card");
-  console.log(cards);
-
-  for (let i = 0; i < cards.length; i++) {
-    let title = cards[i].querySelector(".card-body h5.card-title");
-    console.log(title);
-
-    if (title.innerText.toUpperCase().indexOf(input) > -1) {
-      cards[i].style.display = "";
+genreFilter.addEventListener("change", () => {
+  productCards.forEach((card) => {
+    const genres = card
+      .querySelector(".genre")
+      .textContent.toLowerCase()
+      .trim()
+      .slice("genre:".length)
+      .split(", ");
+    const selectedGenre = genreFilter.value.toLowerCase();
+    if (genres.includes(selectedGenre)) {
+      card.style.display = "block";
     } else {
-      cards[i].style.display = "none";
+      card.style.display = "none";
     }
-  }
-}
+  });
+});
+
+// function searchProduct() {
+//   const input = document.getElementById("filter").value.toUpperCase();
+//   const cardContainer = document.getElementById("card-lists");
+//   console.log(cardContainer);
+//   const cards = cardContainer.querySelectorAll(".card");
+//   console.log(cards);
+
+//   for (let i = 0; i < cards.length; i++) {
+//     let title = cards[i].querySelector(".card-body h5.card-title");
+//     console.log(title);
+
+//     if (title.innerText.toUpperCase().indexOf(input) > -1) {
+//       cards[i].style.display = "";
+//     } else {
+//       cards[i].style.display = "none";
+//     }
+//   }
+// }
