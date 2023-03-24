@@ -1,27 +1,41 @@
+<!-- The doctype declaration defines the version of HTML being used. Opening html tag is specified as well. -->
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- The <head> section contains meta information and links to CSS and other resources. -->
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Links to external CSS files. -->
   <link rel="stylesheet" href="../css/navbar.css" />
   <link rel="stylesheet" href="../output.css" />
   <link rel="stylesheet" href="../css/footer.css" />
   <link rel="stylesheet" href="../css/aboutUs.css" />
+
+  <!-- The <title> tag specifies the title of the page. -->
   <title>Vinyl Visions</title>
+
+  <!-- Link to favicon. -->
   <link rel="shortcut icon" href="../img/favicon-logo-main.png" type="image/x-icon" />
 </head>
 
-<body class="bg-neutral-800">
+
+<!-- The <body> tag specifies the main content of the HTML document. -->
+
+<body class="main-body bg-neutral-800">
   <div id="app-container" class="container-class">
+
+    <!-- The <header> tag specifies the header of the HTML document. -->
     <!--header of the page contains nav bar as html list-->
     <header id="website-header">
+      <!-- The <nav> tag specifies a section for navigation links. -->
       <nav id="navigation-menu" class="navbar mx-5">
-        <!-- Nav bar logo -->
+        <!-- Nav bar logo implemented here. -->
         <img src="../img/brand.PNG" class="logo" alt="website logo" width="120px" height="60px" />
-
-        <!-- Navbar meny options -->
+        <!-- Navbar options. Keeping it as a checkbox toggle to implement hamburger menu later. -->
         <ul class="nav-links">
           <input type="checkbox" id="checkbox_toggle" />
           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
@@ -32,11 +46,6 @@
             <li><a href="./products.html">Products</a></li>
             <li class="projects_primary">
               <a href="./aboutUs.html">About</a>
-              <!-- <ul class="dropdown">
-                        <li><a href="./pages/projects.html#project1">Project 1</a></li>
-                        <li><a href="./pages/projects.html#project1">Project 2</a></li>
-                        <li><a href="./pages/projects.html#project1">Project 3</a></li>
-                      </ul> -->
             </li>
           </div>
         </ul>
@@ -44,6 +53,7 @@
     </header>
     <!--main body of the page-->
     <main class="aboutUs mx-5 my-5">
+      <!-- Section used to describe information of the company -->
       <section class="about-us-content mx-5 my-5">
         <br />
         <h2>About Us</h2>
@@ -58,6 +68,7 @@
         </p>
       </section>
       <br>
+      <!-- A section describing the team and providing a photo of them as well. -->
       <section class="team mx-5 my-5 flex items-center justify-center flex-col">
         <h2>Meet the Team</h2>
         <br>
@@ -107,6 +118,8 @@
         </div>
       </section>
       <br>
+
+      <!-- A section to desribe the mission of the company in detail. -->
       <section class="mission mx-5 my-5">
         <h2>Our Mission</h2>
         <p>
