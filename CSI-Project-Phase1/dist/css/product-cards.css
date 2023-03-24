@@ -146,19 +146,7 @@
   color: #333;
 }
 
-/*
-black --> 130601
-Light Red --> F97068
-Lavender (light purple-blue) --> D6D3F0
-Light Green --> #D4E09B
-Dark Green --> #9CB380
-*/
-
 /* START OF STYLING GENRE DROP DOWN MENU */
-
-/* .dropdown {
-    display
-} */
 
 input[type="checkbox"] {
   display: none;

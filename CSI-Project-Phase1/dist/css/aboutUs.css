@@ -5,9 +5,6 @@ body {
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-}
 
 h1,
 h2,
@@ -36,11 +33,17 @@ p {
 }
 
 .team-member img {
-  border-radius: 50%;
+  border-radius: 25px;
+  height: 20rem;
 }
 
 .aboutUs {
   color: #f97068;
   border-radius: 25px;
   background-color: #d6d3f0;
+}
+
+img {
+  max-width: 50%;
+  border-radius: 10px;
 }

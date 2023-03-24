@@ -1,177 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vinyl Visions</title>
-    <link
-      rel="shortcut icon"
-      href="../img/favicon-logo-main.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../img/favicon-logo-main.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/product-cards.css" />
     <link rel="stylesheet" href="../output.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-  </head>
+</head>
 
-  <body class="bg-neutral-800">
+<body class="bg-neutral-800">
     <div id="app-container" class="container-class">
-      <!--header of the page contains nav bar as html list-->
-      <header id="website-header">
-        <nav id="navigation-menu" class="navbar mx-5">
-          <!-- Nav bar logo -->
-          <img
-            src="../img/brand.PNG"
-            class="logo"
-            alt="website logo"
-            width="120px"
-            height="60px"
-          />
+        <!--header of the page contains nav bar as html list-->
+        <header id="website-header">
+            <nav id="navigation-menu" class="navbar mx-5">
+                <!-- Nav bar logo -->
+                <img src="../img/brand.PNG" class="logo" alt="website logo" width="120px" height="60px" />
 
-          <!-- Navbar meny options -->
-          <ul class="nav-links">
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- Navbar meny options -->
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-            <!-- Navbar menu options -->
-            <div class="menu">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="./products.html">Products</a></li>
-              <li class="projects_primary">
-                <a href="./aboutUs.html">About</a>
-                <!-- <ul class="dropdown">
-                    <li><a href="./pages/projects.html#project1">Project 1</a></li>
-                    <li><a href="./pages/projects.html#project1">Project 2</a></li>
-                    <li><a href="./pages/projects.html#project1">Project 3</a></li>
-                  </ul> -->
-              </li>
+                    <!-- Navbar menu options -->
+                    <div class="menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li class="projects_primary">
+                            <a href="./aboutUs.html">About</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="product-cards" class="mx-5 my-5">
+            <div class="dropdown-main my-5">
+                <div class="dropdown-btn">
+                    <label id="genre-label" for="genre-filter">Choose a Genre:</label>
+                    <select name="gerne-filter" id="genre-filter">
+                        <option value="Indie">Indie</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Rap">Rap</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Hip-Hop">Hip-Hop</option>
+                        <option value="Electronic">Electronic</option>
+                        <option value="House">House</option>
+                        <option value="Funk/Soul">Funk/Soul</option>
+                    </select>
+                </div>
             </div>
-          </ul>
-        </nav>
-      </header>
+            <div>
+                <div class="product-grid">
+                    <div class="card card-shadow" id="card 1">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-dont-forget-about-me-demos.jpg" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">
+                                Don't Forget About Me, Demos
+                            </h2>
+                            <p class="text-lg mb-2">Artist: Dominic Fike</p>
+                            <p class="text-lg mb-2 genre">Genre: Rock, Pop, Indie</p>
+                        </div>
 
-      <main id="product-cards" class="mx-5 my-5">
-        <div class="dropdown-main my-5">
-          <div class="dropdown-btn">
-            <label id="genre-label" for="genre-filter">Choose a Genre:</label>
-            <select name="gerne-filter" id="genre-filter">
-              <option value="Indie">Indie</option>
-              <option value="Pop">Pop</option>
-              <option value="Hip-Hop" selected>Hip-Hop</option>
-              <option value="Rap">Rap</option>
-            </select>
-          </div>
-        </div>
-        <div>
-          <div class="product-grid">
-            <div class="card card-shadow" id="card 1">
-              <div class="card-header card-image">
-                <img src="../img/vinyl-dont-forget-about-me-demos.jpg" />
-              </div>
-              <div class="card-body">
-                <h2 class="text-2xl font-bold mb-4">
-                  Don't Forget About Me, Demos
-                </h2>
-                <p class="text-lg mb-2">Artist: Dominic Fike</p>
-                <p class="text-lg mb-2 genre">Genre: Rock, Pop, Indie</p>
-              </div>
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow" id="card 2">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-big-steppers.jpg" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">
+                                Mr. Morale & the Big Steppers
+                            </h2>
+                            <p class="text-lg mb-2">Artist: Kendrick Lamar</p>
+                            <p class="text-lg mb-2 genre">
+                                Genre:Hip-Hop, Funk/Soul
+                            </p>
+                        </div>
 
-              <div class="card-footer">
-                <button class="btn">Details</button>
-                <button class="btn btn-outline">Contact Seller</button>
-              </div>
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow" id="card 3">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-baby-keem-melodic-blue.jpg" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">The Melodic Blue</h2>
+                            <p class="text-lg mb-2">Artist: Baby Keem</p>
+                            <p class="text-lg mb-2 genre">Genre:Rap</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow" id="card 4">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-flower-boy.jpg" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">Scum F*** Flower Boy</h2>
+                            <p class="text-lg mb-2">Artist: Tyler, The Creator</p>
+                            <p class="text-lg mb-2 genre">
+                                Genre:Hip-Hop
+                            </p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow" id="card 5">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-ready-to-die.png" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">Ready To Die</h2>
+                            <p class="text-lg mb-2">Artist: The Notorious B.I.G</p>
+                            <p class="text-lg mb-2 genre">Genre:Hip-Hop</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow" id="card 6">
+                        <div class="card-header card-image">
+                            <img src="../img/vinyl-stories.jpg" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold mb-4">Stories</h2>
+                            <p class="text-lg mb-2">Artist: Avicii</p>
+                            <p class="text-lg mb-2 genre">Genre:Electronic, Pop, House</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn">Order</button>
+                            <button class="btn btn-outline">More Details</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card card-shadow" id="card 6">
+                            <div class="card-header card-image">
+                                <img src="../img/vinyl-cat-stevens.jpg" />
+                            </div>
+                            <div class="card-body">
+                                <h2 class="text-2xl font-bold mb-4">Cat Stevens' Greatest</h2>
+                                <p class="text-lg mb-2">Artist: Cat Stevens</p>
+                                <p class="text-lg mb-2 genre">Genre: Rock</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <button class="btn">Order</button>
+                                <button class="btn btn-outline">More Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card card-shadow" id="card 6">
+                            <div class="card-header card-image">
+                                <img src="../img/vinyl-unorthodox-jukebox.jpg" />
+                            </div>
+                            <div class="card-body">
+                                <h2 class="text-2xl font-bold mb-4">Unorthodox Jukebox</h2>
+                                <p class="text-lg mb-2">Artist: Bruno Mars</p>
+                                <p class="text-lg mb-2 genre">Genre:Electronic, Rock, Funk/Soul, Pop</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <button class="btn">Order</button>
+                                <button class="btn btn-outline">More Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card card-shadow" id="card 6">
+                            <div class="card-header card-image">
+                                <img src="../img/vinyl-sour.jpg" />
+                            </div>
+                            <div class="card-body">
+                                <h2 class="text-2xl font-bold mb-4">Sour</h2>
+                                <p class="text-lg mb-2">Artist: Olivia Rodrigo</p>
+                                <p class="text-lg mb-2 genre">Genre: Pop Rock, Pop Punk, Pop</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <button class="btn">Order</button>
+                                <button class="btn btn-outline">More Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card card-shadow" id="card 2">
-              <div class="card-header card-image">
-                <img src="../img/vinyl-big-steppers.jpg" />
-              </div>
-              <div class="card-body">
-                <h2 class="text-2xl font-bold mb-4">
-                  Mr. Morale & the Big Steppers
-                </h2>
-                <p class="text-lg mb-2">Artist: Kendrick Lamar</p>
-                <p class="text-lg mb-2 genre">
-                  Genre: Hip Hop, Jazz, Funk / Soul
-                </p>
-              </div>
-
-              <div class="card-footer">
-                <button class="btn">Details</button>
-                <button class="btn btn-outline">Contact Seller</button>
-              </div>
-            </div>
-            <div class="card card-shadow" id="card 3">
-              <div class="card-header card-image">
-                <img src="../img/vinyl-baby-keem-melodic-blue.jpg" />
-              </div>
-              <div class="card-body">
-                <h2 class="text-2xl font-bold mb-4">The Melodic Blue</h2>
-                <p class="text-lg mb-2">Artist: Baby Keem</p>
-                <p class="text-lg mb-2 genre">Genre:Rap, Trap, Pop Rap</p>
-              </div>
-
-              <div class="card-footer">
-                <button class="btn">Details</button>
-                <button class="btn btn-outline">Contact Seller</button>
-              </div>
-            </div>
-            <div class="card card-shadow" id="card 4">
-              <div class="card-header card-image">
-                <img src="../img/vinyl-flower-boy.jpg" />
-              </div>
-              <div class="card-body">
-                <h2 class="text-2xl font-bold mb-4">Scum F*** Flower Boy</h2>
-                <p class="text-lg mb-2">Artist: Tyler, The Creator</p>
-                <p class="text-lg mb-2 genre">
-                  Genre: Jazzy Hip-Hop, Pop Rap, Neo Soul
-                </p>
-              </div>
-
-              <div class="card-footer">
-                <button class="btn">Details</button>
-                <button class="btn btn-outline">Contact Seller</button>
-              </div>
-            </div>
-            <div class="card card-shadow" id="card 5">
-              <div class="card-header card-image">
-                <img src="../img/vinyl-ready-to-die.png" />
-              </div>
-              <div class="card-body">
-                <h2 class="text-2xl font-bold mb-4">Ready To Die</h2>
-                <p class="text-lg mb-2">Artist: The Notorious B.I.G</p>
-                <p class="text-lg mb-2 genre">Genre: Hip-Hop</p>
-              </div>
-
-              <div class="card-footer">
-                <button class="btn">Details</button>
-                <button class="btn btn-outline">Contact Seller</button>
-              </div>
-            </div>
-            <div class="card card-shadow" id="card 6">
-              <div class="card-header card-image">
-                <img src="../img/vinyl-stories.jpg" />
-              </div>
-              <div class="card-body">
-                <h2 class="text-2xl font-bold mb-4">Stories</h2>
-                <p class="text-lg mb-2">Artist: Avicii</p>
-                <p class="text-lg mb-2 genre">Genre: Electronic, Pop, House</p>
-              </div>
-
-              <div class="card-footer">
-                <button class="btn">Details</button>
-                <button class="btn btn-outline">Contact Seller</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <!--footer of the page contains copyright information-->
-      <footer class="mx-5" id="website-footer">
-        <span id="footer-text">copyright of Dom K.&copy; 2023.</span>
-      </footer>
+    </div>
+    </main>
+    <!--footer of the page contains copyright information-->
+    <footer class="mx-5" id="website-footer">
+        <span id="footer-text">&copy; Vinyl Visions 2023. All rights reserved.</span>
+    </footer>
     </div>
     <script src="../js/filter.js"></script>
-  </body>
+</body>
+
 </html>

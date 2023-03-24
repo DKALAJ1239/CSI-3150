@@ -1,118 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vinyl Visions</title>
-    <link
-      rel="shortcut icon"
-      href="./img/favicon-logo-main.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/carouselSlideShow.js"></script>
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./output.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-  </head>
 
-  <body class="bg-neutral-800">
-    <div id="app-container" class="container-class">
-      <!--header of the page contains nav bar as html list-->
-      <header id="website-header">
-        <nav id="navigation-menu" class="navbar mx-5">
-          <!-- Nav bar logo -->
-          <img
-            src="../dist/img/brand.PNG"
-            class="logo"
-            alt="website logo"
-            width="120px"
-            height="60px"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinyl Visions</title>
+  <link rel="shortcut icon" href="./img/favicon-logo-main.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <script src="./js/carouselSlideShow.js"></script>
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./output.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+</head>
 
-          <!-- Navbar meny options -->
-          <ul class="nav-links">
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+<body class="bg-neutral-800">
+  <div id="app-container" class="container-class">
+    <!--header of the page contains nav bar as html list-->
+    <header id="website-header">
+      <nav id="navigation-menu" class="navbar mx-5">
+        <!-- Nav bar logo -->
+        <img src="../dist/img/brand.PNG" class="logo" alt="website logo" width="120px" height="60px" />
 
-            <!-- Navbar menu options -->
-            <div class="menu">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./pages/products.html">Products</a></li>
-              <li class="projects_primary">
-                <a href="./pages/aboutUs.html">About</a>
-                <!-- <ul class="dropdown">
-                <li><a href="./pages/projects.html#project1">Project 1</a></li>
-                <li><a href="./pages/projects.html#project1">Project 2</a></li>
-                <li><a href="./pages/projects.html#project1">Project 3</a></li>
-              </ul> -->
-              </li>
-            </div>
-          </ul>
-        </nav>
-      </header>
+        <!-- Navbar meny options -->
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-      <!--main body of the page-->
-      <main id="vinyl-slideshow" class="mx-5 my-5 shadow-xl shadow-white">
-        <!-- slider container -->
-        <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade aspect-video object-cover">
-            <img
-              src="./img/vinyl-after-hours.jpg"
-              style="width: 100%"
-              onload="showSlides(1)"
-            />
-            <div
-              class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text"
-            >
-              Caption Two
-            </div>
+          <!-- Navbar menu options -->
+          <div class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/products.html">Products</a></li>
+            <li class="projects_primary">
+              <a href="./pages/aboutUs.html">About</a>
+            </li>
           </div>
+        </ul>
+      </nav>
+    </header>
 
-          <div class="mySlides fade aspect-video object-cover">
-            <img
-              src="./img/vinyl-heroes-and-villians.jpg"
-              style="width: 100%"
-            />
-            <div
-              class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text"
-            >
-              Caption Two
-            </div>
-          </div>
-
-          <div class="mySlides fade aspect-video object-cover">
-            <img src="./img/vinyl-hoodie-szn.jpg" style="width: 100%" />
-            <div
-              class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text"
-            >
-              Caption Two
-            </div>
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br />
-
-        <!-- The dots/circles -->
-        <div style="text-align: center">
+    <!--main body of the page-->
+    <main id="vinyl-slideshow" class="mx-5 my-5 shadow-xl shadow-white">
+      <br>
+      <div class="welcome-tag my-5 mx-5 text-4xl font-bold">
+        <h1 id="welcome-words">
+          WELCOME TO VINYL VISION!
+        </h1>
+        <h2 id="welcome-words">
+          Sale! Up to 50% until May!
+        </h2>
+      </div>
+      <!-- slider container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade aspect-video object-cover">
+          <img src="./img/vinyl-after-hours.jpg" style="width: 100%" onload="showSlides(1)" />
           <div
-            class="bg-gray-600 hover:bg-gray-800 transition-all duration-300 rounded-bl-lg rounded-br-lg"
-          >
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text">
+            30% OFF!
           </div>
         </div>
-      </main>
-      <!--footer of the page contains copyright information-->
-      <footer class="mx-5" id="website-footer">
-        <span id="footer-text">copyright of Dom K.&copy; 2023.</span>
-      </footer>
-    </div>
-  </body>
+
+        <div class="mySlides fade aspect-video object-cover">
+          <img src="./img/vinyl-heroes-and-villians.jpg" style="width: 100%" />
+          <div
+            class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text">
+            20% OFF!
+          </div>
+        </div>
+
+        <div class="mySlides fade aspect-video object-cover">
+          <img src="./img/vinyl-hoodie-szn.jpg" style="width: 100%" />
+          <div
+            class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text">
+            50% OFF!
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <div class="bg-gray-600 hover:bg-gray-800 transition-all duration-300 rounded-bl-lg rounded-br-lg">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </main>
+    <!--footer of the page contains copyright information-->
+    <footer class="mx-5" id="website-footer">
+      <span id="footer-text">&copy; Vinyl Visions 2023. All rights reserved.</span>
+    </footer>
+  </div>
+</body>
+
 </html>
