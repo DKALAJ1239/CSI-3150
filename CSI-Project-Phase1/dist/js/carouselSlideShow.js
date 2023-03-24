@@ -1,4 +1,4 @@
-//This JavaScript file is for the carouselSlide functionality.
+//This JavaScript file is for the carouselSlide functionality (on index.html page).
 
 // This variable sets the index of the current slide to 1 and calls the showSlides function to display the first slide.
 let slideIndex = 1;

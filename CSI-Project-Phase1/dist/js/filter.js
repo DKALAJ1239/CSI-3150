@@ -1,4 +1,4 @@
-//This JavaScript file is for the filter functionality between the filter dropdown menu and for the keywords in the genre list/array
+//This JavaScript file is for the filter functionality between the filter dropdown menu and for the keywords in the genre list/array (on products.html page)
 
 // This variable is assigned the value of the genre filter dropdown menu element.
 const genreFilter = document.getElementById("genre-filter");
