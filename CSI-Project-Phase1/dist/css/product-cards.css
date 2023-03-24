@@ -1,16 +1,17 @@
-/* Set global font family */
+/* Set global font family for all elements */
 *,
 *::before,
 *::after {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Style for product grid */
 .product-grid {
   background-color: #d6d3f0;
   border-radius: 25px;
 }
 
-/* Product grid */
+/* More styling for product grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -19,6 +20,7 @@
   padding: 1rem;
 }
 
+/* Style for dropdown main container */
 .dropdown-main {
   background-color: #d6d3f0;
   border-radius: 25px;
@@ -29,6 +31,7 @@
   padding: 20px;
 }
 
+/* Style for dropdown button */
 .dropdown-btn {
   margin: auto;
   width: 50%;
@@ -40,16 +43,18 @@
 
 }
 
+/* applying a raise like affect onto the cards on a hover */
 .dropdown-main :hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px #f97068;
 }
 
+/* Style for genre filter dropdown menu */
 #genre-filter {
   align-items: center;
 }
 
-/* Card */
+/* Style for card */
 .card {
   --padding: 1rem;
   background: #121212;
@@ -61,12 +66,13 @@
   box-sizing: border-box;
 }
 
+/* Style for card with shadow effect */
 .card.card-shadow {
   border: none;
   box-shadow: 0 2px 5px 0 #f97068;
 }
 
-/* Card header */
+/* Style for card header */
 .card-header {
   font-size: 1.5rem;
   padding-bottom: 0;
@@ -74,12 +80,14 @@
   color: #333;
 }
 
+/* Style for card header with image */
 .card-header.card-image {
   padding: 0;
   overflow: hidden;
 }
 
-.card-header.card-image > img {
+/* Style for card header image */
+.card-header.card-image>img {
   display: block;
   width: 100%;
   max-height: 200px;
@@ -89,24 +97,25 @@
   transition: 0.3s transform ease-in-out;
 }
 
-/* Card hover effects */
+/* Hover effect for card */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px #f97068;
 }
 
-.card:hover > .card-header.card-image > img {
+/* Hover effect for card header image */
+.card:hover>.card-header.card-image>img {
   transform: scale(1.1);
 }
 
-/* Card body */
+/* Style for card body */
 .card-body {
   font-size: 0.9rem;
   padding: 0 var(--padding);
   color: #777;
 }
 
-/* Card footer */
+/* Style for card footer */
 .card-footer {
   margin-top: 1rem;
   padding: var(--padding);
@@ -114,7 +123,7 @@
   border-top: 1px solid #f97068;
 }
 
-/* Buttons */
+/* Style for button */
 .btn {
   --color: #f97068;
   background: var(--color);
@@ -127,12 +136,14 @@
   transition: all 0.3s ease-in-out;
 }
 
+/* This block of code styles the behavior of the button when it is hovered or in focus. */
 .btn:hover,
 .btn:focus {
   background: hsl(200, 50%, 60%);
   transform: scale(1.1);
 }
 
+/* This block of code styles the behavior of the button when it is in the "outline" style. */
 .btn.btn-outline {
   border: 1px solid #f97068;
   color: #777;
@@ -148,14 +159,15 @@
 
 /* START OF STYLING GENRE DROP DOWN MENU */
 
+/* This block of code styles the behavior of the genre drop-down menu.
+The input[type="checkbox"] is hidden from view. */
+
 input[type="checkbox"] {
   display: none;
 }
 
-/* ul {
-    display: none;
-} */
-
-input[type="checkbox"]:checked ~ ul {
+/* When the checkbox is checked,
+the unordered list is displayed. */
+input[type="checkbox"]:checked~ul {
   display: block;
 }
