@@ -1,3 +1,7 @@
+/* Adding styles for the website-footer section */
+
+/* Using flex display and aligning items and justifying the content between them */
+
 #website-footer {
     display: flex;
     align-items: center;
