@@ -13,20 +13,26 @@
     <link rel="stylesheet" href="../css/footer.css" />
 </head>
 
+<!-- The code represents a webpage with a header that contains a navigation bar with a logo and menu options, 
+    and a main section that displays a product grid. The product grid has a dropdown menu to filter genres, 
+    and each product is displayed as a card with an image, title, artist name, genre, and two buttons for 
+    ordering or displaying more details. -->
+
 <body class="bg-neutral-800">
     <div id="app-container" class="container-class">
         <!--header of the page contains nav bar as html list-->
         <header id="website-header">
             <nav id="navigation-menu" class="navbar mx-5">
-                <!-- Nav bar logo -->
+                <!-- Logo for navigation bar -->
                 <img src="../img/brand.PNG" class="logo" alt="website logo" width="120px" height="60px" />
 
-                <!-- Navbar meny options -->
+                <!-- Navigation menu options -->
                 <ul class="nav-links">
+                    <!-- Hamburger button for mobile screens -->
                     <input type="checkbox" id="checkbox_toggle" />
                     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-                    <!-- Navbar menu options -->
+                    <!-- Navigation menu list -->
                     <div class="menu">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="./products.html">Products</a></li>
@@ -38,7 +44,9 @@
             </nav>
         </header>
 
+        <!-- Main section displaying the product grid -->
         <main id="product-cards" class="mx-5 my-5">
+            <!-- Dropdown menu to filter genres -->
             <div class="dropdown-main my-5">
                 <div class="dropdown-btn">
                     <label id="genre-label" for="genre-filter">Choose a Genre:</label>
@@ -55,7 +63,9 @@
                 </div>
             </div>
             <div>
+                <!-- Product grid section -->
                 <div class="product-grid">
+                    <!-- Card 1: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
                     <div class="card card-shadow" id="card 1">
                         <div class="card-header card-image">
                             <img src="../img/vinyl-dont-forget-about-me-demos.jpg" />
@@ -73,6 +83,8 @@
                             <button class="btn btn-outline">More Details</button>
                         </div>
                     </div>
+
+                    <!-- Card 2: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
                     <div class="card card-shadow" id="card 2">
                         <div class="card-header card-image">
                             <img src="../img/vinyl-big-steppers.jpg" />
@@ -92,6 +104,13 @@
                             <button class="btn btn-outline">More Details</button>
                         </div>
                     </div>
+
+
+                    <!-- The following code creates a card for an album, which includes a header with an image, a body 
+                        with album information such as title, artist, and genre, a footer with buttons for ordering 
+                        or more details, and a shadow effect. Implemented in cards 1 through 9. -->
+
+                    <!-- Card 3: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
                     <div class="card card-shadow" id="card 3">
                         <div class="card-header card-image">
                             <img src="../img/vinyl-baby-keem-melodic-blue.jpg" />
@@ -107,6 +126,8 @@
                             <button class="btn btn-outline">More Details</button>
                         </div>
                     </div>
+
+                    <!-- Card 4: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
                     <div class="card card-shadow" id="card 4">
                         <div class="card-header card-image">
                             <img src="../img/vinyl-flower-boy.jpg" />
@@ -124,6 +145,8 @@
                             <button class="btn btn-outline">More Details</button>
                         </div>
                     </div>
+
+                    <!-- Card 5: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
                     <div class="card card-shadow" id="card 5">
                         <div class="card-header card-image">
                             <img src="../img/vinyl-ready-to-die.png" />
@@ -139,6 +162,8 @@
                             <button class="btn btn-outline">More Details</button>
                         </div>
                     </div>
+
+                    <!-- Card 6: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
                     <div class="card card-shadow" id="card 6">
                         <div class="card-header card-image">
                             <img src="../img/vinyl-stories.jpg" />
@@ -154,8 +179,10 @@
                             <button class="btn btn-outline">More Details</button>
                         </div>
                     </div>
+
+                    <!-- Card 7: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
                     <div>
-                        <div class="card card-shadow" id="card 6">
+                        <div class="card card-shadow" id="card 7">
                             <div class="card-header card-image">
                                 <img src="../img/vinyl-cat-stevens.jpg" />
                             </div>
@@ -171,8 +198,10 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Card 8: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
                     <div>
-                        <div class="card card-shadow" id="card 6">
+                        <div class="card card-shadow" id="card 8">
                             <div class="card-header card-image">
                                 <img src="../img/vinyl-unorthodox-jukebox.jpg" />
                             </div>
@@ -188,8 +217,10 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Card 9: Implementing a card body, footer, and over card class. Shadow implemented as well.-->
                     <div>
-                        <div class="card card-shadow" id="card 6">
+                        <div class="card card-shadow" id="card 9">
                             <div class="card-header card-image">
                                 <img src="../img/vinyl-sour.jpg" />
                             </div>
@@ -209,11 +240,14 @@
             </div>
     </div>
     </main>
-    <!--footer of the page contains copyright information-->
+
+    <!-- The following code creates the footer of the webpage, which contains copyright information. -->
     <footer class="mx-5" id="website-footer">
         <span id="footer-text">&copy; Vinyl Visions 2023. All rights reserved.</span>
     </footer>
+    <!-- End of footer -->
     </div>
+    <!-- The following code imports a JavaScript file used for filtering content. Rendering issues occurred even with the keyword to make it render right. -->
     <script src="../js/filter.js"></script>
 </body>
 
